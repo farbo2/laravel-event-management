@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Attendee extends Model
 {
+    protected $fillable =['user_id'];
     use HasFactory;
     public function user() : BelongsTo
     {
